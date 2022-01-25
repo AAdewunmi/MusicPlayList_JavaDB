@@ -112,15 +112,13 @@ public class Datasource {
 
     // Datasource
     private static Datasource instance = new Datasource();
-    private Datasource(){
-
-    }
+    private Datasource(){}
     public static Datasource getInstance(){
         return instance;
     }
 
-
     private Connection conn;
+
     // Open Connection
     public boolean open() {
         try {

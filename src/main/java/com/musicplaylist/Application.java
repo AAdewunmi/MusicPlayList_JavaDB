@@ -1,5 +1,7 @@
 package com.musicplaylist;
 
+import com.musicplaylist.model.Datasource;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -14,6 +16,22 @@ public class Application extends javafx.application.Application {
         stage.setTitle("Music Datebase!");
         stage.setScene(scene);
         stage.show();
+    }
+
+    @Override
+    public void init() throws Exception {
+        super.init();
+        if (!Datasource.getInstance().open()) {
+            System.out.println("FATAL ERROR: Could not open database!");
+            Platform.exit();
+            System.exit(0);
+        }
+    }
+
+    @Override
+    public void stop() throws Exception {
+        super.stop();
+        Datasource.getInstance().close();
     }
 
     public static void main(String[] args) {
