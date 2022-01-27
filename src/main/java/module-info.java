@@ -5,5 +5,6 @@ module com.musicplaylist.musicplaylist_javadb {
 
 
     opens com.musicplaylist to javafx.fxml;
+    opens com.musicplaylist.model to javafx.base;
     exports com.musicplaylist;
 }
