@@ -4,9 +4,9 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class Album {
-    private SimpleIntegerProperty id;
-    private SimpleStringProperty name;
-    private SimpleIntegerProperty artistId;
+    private final SimpleIntegerProperty id;
+    private final SimpleStringProperty name;
+    private final SimpleIntegerProperty artistId;
 
     public Album() {
         this.id = new SimpleIntegerProperty();
