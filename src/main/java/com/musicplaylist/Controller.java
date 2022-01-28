@@ -12,6 +12,8 @@ import javafx.scene.control.TableView;
 public class Controller {
     @FXML
     private TableView artistTable;
+
+    @FXML
     public void listArtists(){
         Task<ObservableList<Artist>> task = new GetAllArtistTask();
         artistTable.itemsProperty().bind(task.valueProperty());

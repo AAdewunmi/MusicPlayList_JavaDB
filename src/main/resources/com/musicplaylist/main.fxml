@@ -9,7 +9,7 @@
     <center>
         <TableView fx:id="artistTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <columns>
-                <TableColumn prefWidth="${artistTable.width}" text="Name">
+                <TableColumn prefWidth="${artistTable.width}" text="Select An Artist">
                     <cellValueFactory>
                         <PropertyValueFactory property="name"/>
                     </cellValueFactory>
@@ -23,9 +23,11 @@
     <right>
         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.00" spacing="20.0" BorderPane.alignment="CENTER">
             <children>
-                <Button maxWidth="Infinity" mnemonicParsing="false" text="List Artists" />
-                <Button onAction="#listAlbumsForArtist" maxWidth="Infinity" mnemonicParsing="false" text="Show Albums (artist)" />
+                <Button onAction="#listArtists" maxWidth="Infinity" mnemonicParsing="false" text="Display All Artists" />
+                <Button onAction="#listAlbumsForArtist" maxWidth="Infinity" mnemonicParsing="false" text="Display Artist Albums" />
                 <Button maxWidth="Infinity" mnemonicParsing="false" text="Update Artist" />
+                <Button maxWidth="Infinity" mnemonicParsing="false" text="Delete Artist" />
+                <Button maxWidth="Infinity" mnemonicParsing="false" text="Quit" />
             </children>
             <BorderPane.margin>
                 <Insets right="10.0" />
