@@ -64,6 +64,10 @@ public class Controller {
         });
         new Thread(task).start();
     }
+
+    public void quitApplication(){
+        System.exit(0);
+    }
 }
 
 class GetAllArtistTask extends Task{
