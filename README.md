@@ -1,4 +1,4 @@
-# Music PlayList JavaFX Project
+# Music PlayList JavaFX Project (WORK-IN-PROGRESS!)
 Architectural Design Patten is the Model View Controller (MVC).
 
 Implemented as a JavaFX project using SQLite.
