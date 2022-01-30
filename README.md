@@ -11,7 +11,9 @@ Implemented as a JavaFX project using SQLite.
 
 // private static final String CONNECTION_STRING = "jdbc:sqlite:D:/Users/database/" + DB_NAME; (Mac)
 
-2. 
+2. UI Screenshot
+
+![Image description](src/Screenshot_1.png)
 
 + Adapted from Java Programming Master Class Covering Java 11 & 17 by Tim Buckalka (UDEMY)
 
